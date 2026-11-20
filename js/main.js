@@ -150,7 +150,9 @@ async function boot() {
   new IntersectionObserver(async (es, ob) => {
     const e = es[0];
     if (e.isIntersecting && !picker && !document.documentElement.classList.contains('no-webgl')) {
-      try { const m = window.__m || await import('./window3d.js'); picker = m.createPicker(pc, { mobile, reduce }); } catch (err) { console.warn(err); return; }
+      try { const m = window.__m || await import('./window3d.js'); picker = m.createPicker(pc, { mobile, reduce });
+        if (window.__pendingFinish) picker.setFinish(window.__pendingFinish);
+      } catch (err) { console.warn(err); return; }
     }
     if (picker) e.isIntersecting ? picker.start() : picker.stop();
   }, { rootMargin: '300px 0px' }).observe(pc);
