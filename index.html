@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>پنجره نوین | پروفیل و پنجره دوجداره یو‌پی‌وی‌سی با عایق حرارتی و صوتی بالا (نمونه)</title>
+  <meta name="description" content="پنجره نوین (Novin Profile) — نمونه‌ی نمایشی سایت تولیدکننده‌ی پروفیل یو‌پی‌وی‌سی: پنجره و درِ لولایی و کشویی، پروفیل لمینت، روکش آلومینیوم و شیشه‌ی دوجداره و سه‌جداره.">
+  <!-- DEMO ONLY: remove the next line when the real site goes live so search engines can index it -->
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://example.com/">
+  <meta name="theme-color" content="#0f1a25">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:site_name" content="پنجره نوین (نمونه)">
+  <meta property="og:title" content="پنجره نوین — پنجره‌ای که با اسکرول باز می‌شود (دموی مفهومی)">
+  <meta property="og:description" content="نمونه‌ی نمایشی: پنجره‌ی سه‌بعدی یو‌پی‌وی‌سی، مقطع پروفیل، مقایسه‌ی شیشه و انتخاب رنگ.">
+  <meta property="og:image" content="https://example.com/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css">
+  <link rel="stylesheet" href="css/style.css?v=1">
+
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+  </script>
+  <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js" crossorigin>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://example.com/#org",
+        "name": "پنجره نوین (نام نمونه)",
+        "alternateName": "Novin Profile",
+        "url": "https://example.com/",
+        "logo": "https://example.com/assets/favicon.svg",
+        "description": "تولیدکننده‌ی پروفیل و پنجره‌ی دوجداره‌ی یو‌پی‌وی‌سی — اطلاعات نمونه",
+        "telephone": "+98-00-0000-0000",
+        "email": "info@example.com",
+        "address": { "@type": "PostalAddress", "streetAddress": "[نشانی نمونه]", "addressLocality": "[شهر]", "addressCountry": "IR" },
+        "areaServed": "IR",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://example.com/#website",
+        "url": "https://example.com/",
+        "name": "پنجره نوین (نمونه)",
+        "inLanguage": "fa-IR",
+        "publisher": { "@id": "https://example.com/#org" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">پرش به محتوا</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__in">
+      <a class="brand" href="#hero" aria-label="پنجره نوین — صفحه اصلی">
+        <svg class="brand__logo" viewBox="0 0 40 40" aria-hidden="true"><rect x="7" y="4" width="26" height="32" rx="2.5" fill="none" stroke="currentColor" stroke-width="3"/><path d="M11 8h9v24h-9z" fill="#4fb2e8"/><path d="M22 8h7v24h-7z" fill="#bfe3f5" opacity=".8"/><circle cx="26.5" cy="21" r="1.6" fill="currentColor"/></svg>
+        <span class="brand__txt"><b>پنجره نوین</b><small>Novin Profile</small></span>
+        <span class="chip chip--demo" title="نام و اطلاعات این سایت نمونه است">نمونه</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="منو"><span></span><span></span></button>
+      <nav class="nav__links" id="navLinks" aria-label="منوی اصلی">
+        <a href="#structure">ساختار پروفیل</a>
+        <a href="#glazing">شیشه</a>
+        <a href="#colors">رنگ‌ها</a>
+        <a href="#products">محصولات</a>
+        <a href="#about">درباره‌ی ما</a>
+        <a class="btn btn--sm" href="#contact">درخواست مشاوره</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO: pinned; scroll opens the 3D window ============ -->
+    <section class="hero" id="hero" aria-labelledby="h1">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="fallback-win" id="fallbackWin" aria-hidden="true"><div class="fw__sky"></div><div class="fw__frame"><div class="fw__sash"></div></div></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="hero__text">
+          <p class="eyebrow">پروفیل‌های یو‌پی‌وی‌سی چندمحفظه‌ای</p>
+          <h1 id="h1">پنجره‌ای که <em>نور</em> را به خانه دعوت می‌کند</h1>
+          <p class="lead">پروفیل چندمحفظه‌ای، آب‌بندی دقیق و شیشه‌ی دوجداره؛ برای آرامش، صرفه‌جویی در انرژی و سکوتی که حس می‌کنید.</p>
+          <div class="hero__cta">
+            <a class="btn" href="#products">مشاهده‌ی محصولات</a>
+            <a class="btn btn--ghost" href="#contact">درخواست مشاوره</a>
+          </div>
+        </div>
+      </div>
+      <div class="hud" id="hud" aria-hidden="true">
+        <ol class="hud__steps">
+          <li data-step="0"><i>۱</i><span>بسته</span></li>
+          <li data-step="1"><i>۲</i><span>بازشو لولایی</span></li>
+          <li data-step="2"><i>۳</i><span>کجشو (تهویه)</span></li>
+        </ol>
+        <div class="hud__bar"><span id="hudBar"></span></div>
+      </div>
+      <div class="cue" id="cue" aria-hidden="true"><span>برای باز کردن پنجره، اسکرول کنید</span><i></i></div>
+    </section>
+
+    <!-- ============ feature strip ============ -->
+    <section class="strip" aria-label="ویژگی‌های کلیدی">
+      <ul class="strip__in">
+        <li><b>۵ محفظه</b><span>هوا برای عایق حرارتی بیشتر</span></li>
+        <li><b>۲ یا ۳ جداره</b><span>شیشه با گاز آرگون</span></li>
+        <li><b>درزگیر دو لایه</b><span>بدون نشت هوا و گردوغبار</span></li>
+        <li><b>بی‌نیاز از نگهداری</b><span>نه رنگ می‌خواهد، نه زنگ می‌زند</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ Profile cross-section: explode on scroll ============ -->
+    <section class="explode" id="structure" aria-labelledby="h-structure">
+      <div class="explode__pin" id="explodePin">
+        <div class="explode__head">
+          <p class="eyebrow eyebrow--dark">ساختار پروفیل</p>
+          <h2 id="h-structure">درون یک پروفیل چه می‌گذرد؟</h2>
+          <p class="sub">با اسکرول، مقطع پروفیل از هم باز می‌شود: محفظه‌های هوا گرما و صدا را مهار می‌کنند و تقویت‌کننده‌ی فولادی استحکام می‌دهد.</p>
+        </div>
+        <div class="explode__body">
+          <figure class="explode__fig">
+            <svg id="explodeSvg" viewBox="0 0 900 470" role="img" aria-label="مقطع شماتیک پروفیل پنجره‌ی یو‌پی‌وی‌سی شامل قاب، بال، تقویت فولادی، درزگیر، شیشه دوجداره، اسپیسر و زهوار">
+              <defs>
+                <linearGradient id="gGlass" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#d7f0fb"/><stop offset="1" stop-color="#8fc9e6"/></linearGradient>
+                <pattern id="pDots" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.1" fill="#6f7d88"/></pattern>
+                <linearGradient id="gSteel" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#b9c3cc"/><stop offset="1" stop-color="#7d8a95"/></linearGradient>
+              </defs>
+              <g transform="translate(80,130)">
+                <g class="ex-lines" id="exLines"></g>
+                <g class="part" id="pFrame" data-dx="-70" data-dy="0">
+                  <path class="shell" d="M0 0H230V50H170V200H0Z"/>
+                  <rect class="cham" x="10" y="10" width="72" height="52" rx="8"/><rect class="cham" x="90" y="10" width="72" height="52" rx="8"/>
+                  <rect class="cham" x="10" y="72" width="150" height="56" rx="8"/>
+                  <rect class="cham" x="10" y="138" width="72" height="52" rx="8"/><rect class="cham" x="90" y="138" width="72" height="52" rx="8"/>
+                  <rect class="cham" x="178" y="8" width="44" height="34" rx="7"/>
+                </g>
+                <g class="part" id="pFrameSteel" data-dx="-70" data-dy="-118"><rect x="22" y="82" width="126" height="36" rx="4" fill="url(#gSteel)" stroke="#5f6b75" stroke-width="2"/><rect x="32" y="92" width="106" height="16" rx="2" fill="none" stroke="#e2e8ed" stroke-width="2" opacity=".7"/></g>
+                <g class="part" id="pGasketA" data-dx="-34" data-dy="92"><rect class="black" x="168" y="56" width="12" height="36" rx="5"/></g>
+                <g class="part" id="pSash" data-dx="40" data-dy="20">
+                  <path class="shell" d="M180 58H350V112H318V198H350V232H180Z"/>
+                  <rect class="cham" x="188" y="66" width="58" height="56" rx="8"/><rect class="cham" x="254" y="66" width="56" height="56" rx="8"/>
+                  <rect class="cham" x="188" y="130" width="122" height="52" rx="8"/>
+                  <rect class="cham" x="188" y="190" width="58" height="34" rx="7"/><rect class="cham" x="254" y="190" width="56" height="34" rx="7"/>
+                </g>
+                <g class="part" id="pSashSteel" data-dx="40" data-dy="-132"><rect x="200" y="138" width="98" height="36" rx="4" fill="url(#gSteel)" stroke="#5f6b75" stroke-width="2"/><rect x="210" y="148" width="78" height="16" rx="2" fill="none" stroke="#e2e8ed" stroke-width="2" opacity=".7"/></g>
+                <g class="part" id="pPane1" data-dx="150" data-dy="-52"><rect x="322" y="116" width="300" height="8" rx="2" fill="url(#gGlass)" stroke="#6fb0d2" stroke-width="1.5"/></g>
+                <g class="part" id="pSealT" data-dx="150" data-dy="-70"><rect class="black" x="322" y="110" width="26" height="5" rx="2"/></g>
+                <g class="part" id="pSpacer" data-dx="150" data-dy="0"><rect x="322" y="124" width="18" height="34" rx="2" fill="#aeb8c0" stroke="#6f7d88" stroke-width="1.5"/><rect x="326" y="128" width="10" height="26" fill="url(#pDots)"/></g>
+                <g class="part" id="pPane2" data-dx="150" data-dy="52"><rect x="322" y="158" width="300" height="8" rx="2" fill="url(#gGlass)" stroke="#6fb0d2" stroke-width="1.5"/></g>
+                <g class="part" id="pSealB" data-dx="150" data-dy="70"><rect class="black" x="322" y="167" width="26" height="4" rx="2"/></g>
+                <g class="part" id="pBead" data-dx="70" data-dy="78"><path class="shell" d="M318 172H360L372 198H318Z"/><rect class="cham" x="326" y="178" width="26" height="14" rx="4"/></g>
+                <g class="ex-badges" id="exBadges"></g>
+              </g>
+            </svg>
+          </figure>
+          <ol class="legend" id="legend">
+            <li data-i="1"><i>۱</i> قاب اصلی (فریم) با ۵ محفظه‌ی هوا</li>
+            <li data-i="2"><i>۲</i> تقویت‌کننده‌ی فولادی قاب</li>
+            <li data-i="3"><i>۳</i> بال بازشو (ساش)</li>
+            <li data-i="4"><i>۴</i> تقویت‌کننده‌ی فولادی بال</li>
+            <li data-i="5"><i>۵</i> درزگیرهای انعطاف‌پذیر (گسکت)</li>
+            <li data-i="6"><i>۶</i> شیشه‌ی دوجداره با گاز آرگون</li>
+            <li data-i="7"><i>۷</i> اسپیسر و جاذب رطوبت</li>
+            <li data-i="8"><i>۸</i> زهوار (بید) شیشه</li>
+          </ol>
+        </div>
+        <p class="note">تصویر شماتیک و نمایشی است و نشان‌دهنده‌ی مقطع واقعی هیچ محصولی نیست.</p>
+      </div>
+    </section>
+
+    <!-- ============ Glazing comparison ============ -->
+    <section class="glazing" id="glazing" aria-labelledby="h-glazing">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="eyebrow eyebrow--dark">شیشه</p>
+          <h2 id="h-glazing">یک‌جداره، دوجداره یا سه‌جداره؟</h2>
+          <p class="sub">نوار را جابه‌جا کنید و ببینید گرما و صدا چطور از شیشه عبور می‌کنند.</p>
+        </div>
+        <div class="gz reveal">
+          <div class="gz__scene">
+            <svg id="gzSvg" viewBox="0 0 800 520" role="img" aria-label="مقایسه‌ی عبور گرما و صدا از شیشه‌ی یک‌جداره، دوجداره و سه‌جداره">
+              <defs>
+                <linearGradient id="gOut" x1="0" x2="1"><stop offset="0" stop-color="#a9cdea"/><stop offset="1" stop-color="#d9ecf9"/></linearGradient>
+                <linearGradient id="gIn" x1="0" x2="1"><stop offset="0" stop-color="#ffe3bd"/><stop offset="1" stop-color="#ffc07a"/></linearGradient>
+                <radialGradient id="gLamp"><stop offset="0" stop-color="#fff6d8"/><stop offset="1" stop-color="#fff6d800"/></radialGradient>
+                <marker id="arr" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#e5532d"/></marker>
+              </defs>
+              <rect x="0" y="0" width="400" height="520" fill="url(#gOut)"/>
+              <rect x="400" y="0" width="400" height="520" fill="url(#gIn)"/>
+              <circle cx="640" cy="120" r="130" fill="url(#gLamp)"/>
+              <g class="snow" id="snow"></g>
+              <text x="190" y="52" text-anchor="middle" class="gz__lbl">بیرون · ۵- درجه</text>
+              <text x="610" y="52" text-anchor="middle" class="gz__lbl gz__lbl--in">داخل · ۲۲ درجه</text>
+              <rect x="352" y="0" width="96" height="30" fill="#f4f6f7"/><rect x="352" y="490" width="96" height="30" fill="#f4f6f7"/>
+              <g id="argon"><rect x="368" y="30" width="64" height="460" fill="#dff1f9" opacity=".55"/></g>
+              <rect class="pane" id="pn0" x="396" y="26" width="8" height="468" rx="2"/>
+              <rect class="pane" id="pn1" x="410" y="26" width="8" height="468" rx="2"/>
+              <rect class="pane" id="pn2" x="424" y="26" width="8" height="468" rx="2"/>
+              <g id="heat"></g>
+              <g transform="translate(110 280)"><path d="M-22 -16 L-8 -16 L10 -32 L10 32 L-8 16 L-22 16Z" fill="#4a6479"/></g>
+              <g id="waves"></g>
+            </svg>
+            <div class="gz__legend"><span class="lg lg--heat">گرمای خارج‌شونده</span><span class="lg lg--sound">صدای ورودی</span></div>
+          </div>
+          <div class="gz__panel">
+            <div class="seg" role="radiogroup" aria-label="نوع شیشه" id="seg">
+              <button role="radio" aria-checked="false" data-i="0">یک‌جداره</button>
+              <button role="radio" aria-checked="true" data-i="1">دوجداره</button>
+              <button role="radio" aria-checked="false" data-i="2">سه‌جداره</button>
+            </div>
+            <input class="range" id="gzRange" type="range" min="0" max="2" step="1" value="1" aria-label="نوار مقایسه‌ی نوع شیشه">
+            <div class="metrics">
+              <div class="metric"><span class="metric__k">ضریب انتقال حرارت (Uw)</span><b class="metric__v"><span id="mU">۱٫۳</span> <small>W/m²K</small></b><div class="bar"><i id="bU"></i></div><small class="metric__n">هرچه کمتر، بهتر</small></div>
+              <div class="metric"><span class="metric__k">کاهش صدا</span><b class="metric__v"><span id="mDb">۳۲</span> <small>dB</small></b><div class="bar bar--b"><i id="bDb"></i></div><small class="metric__n">هرچه بیشتر، بهتر</small></div>
+              <div class="metric"><span class="metric__k">اتلاف انرژی نسبی</span><b class="metric__v"><span id="mLoss">۲۲</span><small>٪</small></b><div class="bar bar--r"><i id="bLoss"></i></div><small class="metric__n">نسبت به شیشه‌ی یک‌جداره</small></div>
+            </div>
+            <p class="note">⚠ همه‌ی اعداد این بخش نمایشی (illustrative) هستند و به ترکیب شیشه، پروفیل و نصب بستگی دارند.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Colour / laminate picker (3D) ============ -->
+    <section class="colors" id="colors" aria-labelledby="h-colors">
+      <div class="wrap colors__grid">
+        <div class="colors__ui reveal">
+          <p class="eyebrow eyebrow--dark">رنگ و لمینت</p>
+          <h2 id="h-colors">رنگ پنجره‌ی خودتان را انتخاب کنید</h2>
+          <p class="sub">با لمینت‌های ضدخش و مقاوم در برابر نور خورشید، پنجره‌ها با هر دکوراسیون هماهنگ می‌شوند. روی نمونه کلیک کنید؛ پنجره‌ی سه‌بعدی را بچرخانید یا باز کنید.</p>
+          <div class="swatches" id="swatches" role="radiogroup" aria-label="رنگ پروفیل">
+            <button class="sw sw--white is-on" role="radio" aria-checked="true" data-k="white"><span></span><b>سفید یخی</b></button>
+            <button class="sw sw--anthracite" role="radio" aria-checked="false" data-k="anthracite"><span></span><b>طوسی آنتراسیت</b></button>
+            <button class="sw sw--oak" role="radio" aria-checked="false" data-k="oak"><span></span><b>بلوط طلایی</b></button>
+            <button class="sw sw--walnut" role="radio" aria-checked="false" data-k="walnut"><span></span><b>گردوی تیره</b></button>
+          </div>
+          <p class="colors__name">رنگ انتخابی: <b id="colorName">سفید یخی</b></p>
+          <button class="btn btn--ghost btn--dark" id="openToggle" type="button">باز کردن بال پنجره</button>
+        </div>
+        <div class="colors__view reveal">
+          <canvas id="pickCanvas" aria-label="پنجره‌ی سه‌بعدی؛ برای چرخاندن بکشید" role="img"></canvas>
+          <span class="hint">بکشید تا بچرخد ↔</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Products ============ -->
+    <section class="products" id="products" aria-labelledby="h-products">
+      <div class="wrap">
+        <div class="head reveal">
+          <p class="eyebrow eyebrow--dark">محصولات</p>
+          <h2 id="h-products">همه‌ی راه‌حل‌های پنجره و در، زیر یک سقف</h2>
+        </div>
+        <ul class="cards">
+          <li class="card reveal"><a href="#contact" aria-label="پنجره و در لولایی">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="8" width="40" height="48" rx="3"/><rect x="17" y="13" width="30" height="38" rx="1.5"/><path d="M17 13 47 32 17 51"/><circle cx="43" cy="32" r="1.6"/></svg>
+            <h3>پنجره و در لولایی</h3><p>بازشو، کجشو و دوحالته با قفل چندنقطه‌ای و آب‌بندی کامل.</p><span class="more">بیشتر بدانید ←</span></a></li>
+          <li class="card reveal"><a href="#contact" aria-label="پنجره و در کشویی">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="3"/><rect x="12" y="16" width="20" height="32"/><rect x="30" y="16" width="22" height="32"/><path d="M36 32h10m-4-4 4 4-4 4"/></svg>
+            <h3>پنجره و در کشویی</h3><p>ریل روان و بی‌صدا برای بالکن و فضاهای باز؛ مدل لیفت‌اسلاید هم داریم.</p><span class="more">بیشتر بدانید ←</span></a></li>
+          <li class="card reveal"><a href="#colors" aria-label="پروفیل لمینت">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="10" width="44" height="44" rx="4"/><path d="M18 14c4 8-4 14 0 22s-2 12 0 14M28 14c3 9-3 13 0 20s-1 13 0 16M38 14c4 8-3 14 1 22s-2 12 0 14M46 14c2 10-2 14 0 20"/></svg>
+            <h3>پروفیل لمینت‌شده</h3><p>طرح چوب و رنگ‌های مدرن با روکشی ضدخش و ماندگار.</p><span class="more">رنگ‌ها را ببینید ←</span></a></li>
+          <li class="card reveal"><a href="#contact" aria-label="روکش آلومینیوم">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 50V16l14-6 30 8v32l-14 6z"/><path d="M10 16l30 8 14-6M40 24v32"/><path d="M16 36l18 5" opacity=".6"/></svg>
+            <h3>روکش آلومینیومی</h3><p>ظاهر شیک آلومینیوم با عایق‌بودن پروفیل یو‌پی‌وی‌سی در یک محصول.</p><span class="more">بیشتر بدانید ←</span></a></li>
+          <li class="card reveal"><a href="#glazing" aria-label="شیشه دوجداره و سه‌جداره">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="8" width="6" height="48" rx="1"/><rect x="29" y="8" width="6" height="48" rx="1"/><rect x="44" y="8" width="6" height="48" rx="1"/><path d="M23 20h3m-3 8h3m-3 8h3M38 20h3m-3 8h3m-3 8h3" opacity=".6"/></svg>
+            <h3>شیشه‌ی دوجداره و سه‌جداره</h3><p>گاز آرگون، پوشش کم‌گسیل (Low-E) و شیشه‌ی ایمنی برای ساختمان‌های مختلف.</p><span class="more">مقایسه کنید ←</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="about" id="about" aria-labelledby="h-about">
+      <div class="wrap about__grid">
+        <div class="reveal">
+          <p class="eyebrow">درباره‌ی ما</p>
+          <h2 id="h-about">کیفیتی که در جزئیات دیده می‌شود</h2>
+          <p class="sub sub--light">«پنجره نوین» نامی نمونه است. در سایت نهایی، این بخش داستان واقعی شرکت، خط تولید، گواهینامه‌ها و پروژه‌های اجراشده را روایت می‌کند — با متن اختصاصی و عکس‌های واقعی کارخانه.</p>
+          <ul class="strengths">
+            <li><b>عایق حرارتی و صوتی</b> پروفیل چندمحفظه‌ای و شیشه‌ی دوجداره.</li>
+            <li><b>دوام و ماندگاری</b> مقاوم در برابر رطوبت، زنگ‌زدگی و تابش خورشید.</li>
+            <li><b>طراحی سفارشی</b> هر اندازه، رنگ و نوع بازشو.</li>
+            <li><b>نصب و خدمات پس از فروش</b> مشاوره، اندازه‌گیری و پشتیبانی.</li>
+          </ul>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><b data-count="25">۲۵</b><span>سال تجربه*</span></div>
+          <div class="stat"><b data-count="5000">۵۰۰۰</b><span>پروژه‌ی اجراشده*</span></div>
+          <div class="stat"><b data-count="10">۱۰</b><span>سال ضمانت*</span></div>
+          <div class="stat"><b data-count="64">۶۴</b><span>نمایندگی*</span></div>
+          <p class="note note--light">* اعداد نمونه و صرفاً برای نمایش چیدمان هستند.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact (placeholders only) ============ -->
+    <section class="contact" id="contact" aria-labelledby="h-contact">
+      <div class="wrap contact__grid">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--dark">تماس با ما</p>
+          <h2 id="h-contact">برای مشاوره و برآورد قیمت، پیام بدهید</h2>
+          <address class="addr">
+            <p><b>تلفن:</b> <span dir="ltr">+۹۸ ۰۰ ۰۰۰۰ ۰۰۰۰</span> (شماره‌ی نمونه)</p>
+            <p><b>ایمیل:</b> <span dir="ltr">info@example.com</span></p>
+            <p><b>نشانی کارخانه:</b> [نشانی نمونه — شهر، شهرک صنعتی]</p>
+            <p><b>ساعت کاری:</b> شنبه تا چهارشنبه، ۸ تا ۱۷ (نمونه)</p>
+          </address>
+          <div class="map" aria-hidden="true"><span>محل نقشه (نمونه)</span></div>
+        </div>
+        <form class="form reveal" id="form" novalidate>
+          <label>نام و نام خانوادگی<input name="name" type="text" autocomplete="name" placeholder="مثلاً: علی رضایی"></label>
+          <label>شماره‌ی تماس<input name="tel" type="tel" autocomplete="tel" inputmode="tel" dir="ltr" placeholder="۰۹۰۰ ۰۰۰ ۰۰۰۰"></label>
+          <label>پیام شما<textarea name="msg" rows="4" placeholder="نوع پنجره، متراژ تقریبی و شهر پروژه"></textarea></label>
+          <button class="btn" type="submit">ارسال درخواست</button>
+          <p class="form__ok" id="formOk" role="status" aria-live="polite" hidden>این فرم نمایشی است و پیامی ارسال نمی‌شود.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__in">
+      <b>پنجره نوین · Novin Profile</b>
+      <p>این وب‌سایت فقط یک نمونه‌ی مفهومی برای نمایش جلوه‌های بصری است. نام، متن‌ها و اطلاعات تماس، نمونه (placeholder) هستند.</p>
+      <small>© <span id="year">۲۰۲۶</span> — دموی مفهومی</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script type="module" src="js/main.js?v=1"></script>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</body>
+</html>
